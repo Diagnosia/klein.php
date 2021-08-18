@@ -1,8 +1,8 @@
 {
-   "name": "klein/klein",
-   "description": "A lightning fast router for PHP",
+   "name": "diagnosia/klein",
+   "description": "A lightning fast router for PHP. (forked from klein/klein.php)",
    "keywords": ["router", "routing", "sinatra", "boilerplate"],
-   "homepage": "https://github.com/klein/klein.php",
+   "homepage": "https://github.com/diagnosia/klein.php",
    "license": "MIT",
    "authors": [
       {
