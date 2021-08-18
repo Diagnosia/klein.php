@@ -2,7 +2,7 @@
 Fork of [https://github.com/klein/klein.php](https://github.com/klein/klein.php)
 
 In the `src/Klein/Response::chunk` function is a `printf` statement, that prints the strlen in hex. We stream large json files, so we had to get
-rid of that statement. We also added the `.git` folder to the `.gitignore` file. Also updated the `composer.json` file as well as the *Composer Installation* section.
+rid of that statement. We also added the `.git` folder to the `.gitignore` file.
 
 
 # Klein.php
@@ -25,7 +25,7 @@ rid of that statement. We also added the `.git` folder to the `.gitignore` file.
 ## Composer Installation
 
 1. Get [Composer](http://getcomposer.org/)
-2. Require Klein with `php composer.phar require diagnosia/klein`
+2. Require Klein with `php composer.phar require klein/klein`
 3. Add the following to your application's main PHP file: `require 'vendor/autoload.php';`
 
 ## Example
