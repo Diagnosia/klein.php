@@ -11,6 +11,7 @@
 
 namespace Klein;
 
+use AllowDynamicProperties;
 use BadMethodCallException;
 use Klein\Exceptions\DuplicateServiceException;
 use Klein\Exceptions\UnknownServiceException;
@@ -18,6 +19,7 @@ use Klein\Exceptions\UnknownServiceException;
 /**
  * App
  */
+#[AllowDynamicProperties]
 class App
 {
 
@@ -68,7 +70,7 @@ class App
      */
     public function __call($method, $args)
     {
-        if (!isset($this->services[$method]) || !is_callable($this->services[$method])) {
+        if (!method_exists($this->services, $method)) {
             throw new BadMethodCallException('Unknown method '. $method .'()');
         }
 

@@ -10,3 +10,4 @@ report/
 
 .git
 .idea
+.phpunit.result.cache

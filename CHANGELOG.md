@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## Changes for Diagnosia
+
+### 2023-01-26
+
+- Update return types of `src/Klein/DataCollection/DataCollection.php` interface methods to be compatible with PHP8
+- Update tests
+
+### 2021-08-18
+
+In the `src/Klein/Response::chunk` function is a `printf` statement, that prints the strlen in hex. We stream large json files, so we had to get
+rid of that statement. We also added the `.git` folder to the `.gitignore` file.
 
 ## 2.1.2
 

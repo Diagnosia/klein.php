@@ -1,0 +1,8 @@
+services:
+  klein:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: klein
+    volumes:
+      - .:/app

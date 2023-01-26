@@ -1,11 +1,6 @@
-# Changes for Diagnosia
-Fork of [https://github.com/klein/klein.php](https://github.com/klein/klein.php)
-
-In the `src/Klein/Response::chunk` function is a `printf` statement, that prints the strlen in hex. We stream large json files, so we had to get
-rid of that statement. We also added the `.git` folder to the `.gitignore` file.
-
-
 # Klein.php
+
+Fork of [https://github.com/klein/klein.php](https://github.com/klein/klein.php)
 
 [![Build Status](https://travis-ci.org/klein/klein.php.png?branch=master)](https://travis-ci.org/klein/klein.php)
 
