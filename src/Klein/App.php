@@ -63,14 +63,14 @@ class App
      * Allows the ability to arbitrarily call a property as a callable method
      * Allow callbacks to be assigned as properties and called like normal methods
      *
-     * @param callable $method          The callable method to execute
+     * @param string $method          The callable method to execute
      * @param array $args               The argument array to pass to our callback
      * @throws BadMethodCallException   If a non-registered method is attempted to be called
      * @return void
      */
     public function __call($method, $args)
     {
-        if (!method_exists($this->services, $method)) {
+        if (!isset($this->services[$method]) || !is_callable($this->services[$method])) {
             throw new BadMethodCallException('Unknown method '. $method .'()');
         }
 
